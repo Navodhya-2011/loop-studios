@@ -1,0 +1,145 @@
+// App.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+// Global styles
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Header
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 100px;
+  height: auto;
+}
+
+.header__links {
+  display: none;
+}
+
+// Feature section
+.feature {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.feature__image {
+  width: 400px;
+  height: 300px;
+  background-color: #ccc;
+  margin-bottom: 40px;
+}
+
+// Creations section
+.creations {
+  background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.creations__title {
+  margin-bottom: 20px;
+}
+
+.creations__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.creations__grid__item {
+  background-color: #ccc;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creations__grid__item__title {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+// Footer
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  margin-bottom: 20px;
+}
+
+.footer__links__box {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links__item {
+  margin: 0 10px;
+}
+
+.footer__social {
+  margin-bottom: 20px;
+}
+
+.footer__social__item {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer__copy {
+  font-size: 14px;
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: block;
+  }
+
+  .header__links {
+    display: block;
+  }
+
+  .onlyDesktop {
+    display: none;
+  }
+
+  .onlyMobile {
+    display: block;
+  }
+}
